@@ -6,10 +6,18 @@
 
 如果你不想自己动手，可以同时安装 [`hyperf-ext/auth`](https://github.com/hyperf-ext/auth) 组件来获得接近开箱即用的身份认证和授权功能。 
 
-## 安装
+提了半天issues 还是没有回复，自己拉一个库，支持 hyperf3
+
+## 安装（作者的）
 
 ```shell script
 composer require hyperf-ext/jwt
+```
+
+## 安装（修改办）
+
+```shell script
+composer require hashwallet/hyperf-jwt
 ```
 
 ## 发布配置
