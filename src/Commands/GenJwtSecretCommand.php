@@ -16,7 +16,7 @@ class GenJwtSecretCommand extends AbstractGenCommand
 {
     protected $name = 'gen:jwt-secret';
 
-    protected $description = 'Set the JWT secret key used to sign the tokens';
+    protected string $description = 'Set the JWT secret key used to sign the tokens';
 
     public function handle()
     {
