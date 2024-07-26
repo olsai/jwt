@@ -15,6 +15,7 @@ use HyperfExt\Jwt\RequestParser\Handlers\Cookies;
 use HyperfExt\Jwt\RequestParser\Handlers\InputSource;
 use HyperfExt\Jwt\RequestParser\Handlers\QueryString;
 use HyperfExt\Jwt\RequestParser\Handlers\RouteParams;
+use function Hyperf\Support\make;
 
 class RequestParserFactory
 {

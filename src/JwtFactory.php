@@ -12,6 +12,7 @@ namespace HyperfExt\Jwt;
 
 use Hyperf\Contract\ConfigInterface;
 use HyperfExt\Jwt\Contracts\JwtFactoryInterface;
+use function Hyperf\Support\make;
 
 class JwtFactory implements JwtFactoryInterface
 {
