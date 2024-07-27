@@ -12,6 +12,7 @@ namespace HyperfExt\Jwt\RequestParser\Handlers;
 
 use HyperfExt\Jwt\Contracts\RequestParser\HandlerInterface as ParserContract;
 use Psr\Http\Message\ServerRequestInterface;
+use function Hyperf\Collection\data_get;
 
 class InputSource implements ParserContract
 {

@@ -8,6 +8,8 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/jwt/blob/master/LICENSE
  */
+use function Hyperf\Support\env;
+
 return [
     /*
     |--------------------------------------------------------------------------

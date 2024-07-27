@@ -10,10 +10,11 @@ declare(strict_types=1);
  */
 namespace HyperfExt\Jwt\Claims;
 
-use Hyperf\Utils\ApplicationContext;
-use Hyperf\Utils\Str;
+use Hyperf\Context\ApplicationContext;
+use Hyperf\Stringable\Str;
 use HyperfExt\Jwt\Contracts\ClaimInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use function Hyperf\Support\make;
 
 class Factory
 {
@@ -180,6 +181,6 @@ class Factory
 
     public function jti(): string
     {
-        return Str::random(16);
+        return Str::random();
     }
 }

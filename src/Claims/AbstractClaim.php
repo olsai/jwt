@@ -10,9 +10,9 @@ declare(strict_types=1);
  */
 namespace HyperfExt\Jwt\Claims;
 
-use Hyperf\Utils\ApplicationContext;
-use Hyperf\Utils\Contracts\Arrayable;
-use Hyperf\Utils\Contracts\Jsonable;
+use Hyperf\Context\ApplicationContext;
+use Hyperf\Contract\Arrayable;
+use Hyperf\Contract\Jsonable;
 use HyperfExt\Jwt\Contracts\ClaimInterface;
 use HyperfExt\Jwt\Contracts\ManagerInterface;
 use JsonSerializable;
@@ -34,7 +34,7 @@ abstract class AbstractClaim implements ClaimInterface, Arrayable, Jsonable, Jso
     private $value;
 
     /**
-     * @var \HyperfExt\Jwt\Claims\Factory
+     * @var Factory
      */
     private $factory;
 
