@@ -22,6 +22,7 @@ use HyperfExt\Jwt\Claims\Collection;
 use HyperfExt\Jwt\Contracts\PayloadValidatorInterface;
 use HyperfExt\Jwt\Exceptions\PayloadException;
 use JsonSerializable;
+use function Hyperf\Support\value;
 
 class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerializable
 {
@@ -208,6 +209,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
      *
      * @return mixed
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($key)
     {
         return Arr::get($this->toArray(), $key);
@@ -221,6 +223,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
      *
      * @throws \HyperfExt\Jwt\Exceptions\PayloadException
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($key, $value)
     {
         throw new PayloadException('The payload is immutable');
@@ -233,6 +236,7 @@ class Payload implements ArrayAccess, Arrayable, Countable, Jsonable, JsonSerial
      *
      * @throws \HyperfExt\Jwt\Exceptions\PayloadException
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($key)
     {
         throw new PayloadException('The payload is immutable');
